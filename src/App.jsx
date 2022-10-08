@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting="Aquí se está construyendo la web de Odyssey"/>
+      <ItemListContainer />
     </>
   );
 }

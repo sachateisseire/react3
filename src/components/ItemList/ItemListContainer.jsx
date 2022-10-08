@@ -1,22 +1,23 @@
 import React from 'react'
-import itemListContainer from './itemListContainer.css'
+import Cards from './Cards'
+import './itemListContainer.css'
 
 function ItemListContainer(props) {
   return (
     <>
-      <div className="container-fluid text-center">
+      <div className="container-fluid text-center" id='container-fluid-listContainer'>
         <div className="row">
-          <div className="col">
-            <p>{props.greeting}</p>
+        <div className="col">
+          <Cards />
           </div>
           <div className="col">
-            <p>Muy pronto los mejores cursos y carreras</p>
+          <Cards />
           </div>
           <div className="col">
-            <p>Para seguir tu aprendizaje como desarrollador</p>
+          <Cards />
           </div>
         </div>
-      </div>
+        </div>
     </>
   )
 }
