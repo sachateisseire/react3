@@ -3,17 +3,17 @@
 }
 
 #container-fluid-listContainer{
-    background-image: linear-gradient(to right top, #1626cb, #1d44d6, #305ddd, #4875e3, #618be6, #5b9dee, #5eaff4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    height: auto; 
+    background-image: linear-gradient(to right top, #6043ec, #595cf1, #5870f2, #5f82f1, #6d93ee, #64a3f4, #62b1f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    height: auto; 
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .row{
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
