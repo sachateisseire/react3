@@ -1,14 +1,15 @@
 import React from "react";
 import './cards.css'
 
-function Cards() {
+function Cards(props) {
+
     return (
        <>
           <div className="card text-white bg-dark mb-3" id="card-id">
             <div className="card-body">
-            <h5 className="card-title">React JS</h5>
-              <p className="card-text">Aprende a utilizar esta gran herramienta de desarrollo Front End</p>
-              <a href="#" className="btn btn-primary">Comprar</a>
+            <h5 className="card-title">{props.title}</h5>
+              <p className="card-text">{props.detail}</p>
+              <a href="#" className="btn btn-primary">Ver detalles</a>
             </div>
             </div>
        </>
