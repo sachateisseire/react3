@@ -4,7 +4,7 @@ import './navBar.css'
 function NavBar() {
     return (
 
-        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+        <nav className="navbar navbar-dark navbar-expand-lg bg-dark" id='navBar-id'>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Odyssey</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

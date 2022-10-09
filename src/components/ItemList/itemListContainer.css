@@ -1,12 +1,33 @@
-#container-fluid-listContainer{
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-    height: auto; 
-    
+.body{
+    background-color: black;
 }
+
+#container-fluid-listContainer{
+    background-image: linear-gradient(to right top, #1626cb, #1d44d6, #305ddd, #4875e3, #618be6, #5b9dee, #5eaff4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    height: auto; 
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .col{
     color: #F2F2F2;
     height: auto;
     padding: 15px;
-
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
