@@ -28,6 +28,6 @@ const data = [
 
 export function getCursos() {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(data), 1500);
+        setTimeout(() => resolve(data), 500);
     });
 }
