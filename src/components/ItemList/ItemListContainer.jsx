@@ -1,6 +1,8 @@
 import React from 'react'
 import Cards from './Cards'
 import './itemListContainer.css'
+import { getCursos } from "../../mockAPI/mockAPI"
+
 
 function ItemListContainer(props) {
   return (

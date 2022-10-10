@@ -22,7 +22,7 @@ function Cards(props) {
               <img src={props.img} alt="" class="card-img-top"/>
               <p className="card-text">{props.detail}</p>
 
-              <button onClick={handleClick} href="#" className="btn btn-primary" style={colorBtn} id="btn-test">Ver detalle</button>
+              <button onClick={handleClick} href="#" className="btn btn-primary" style={colorBtn}>Ver detalle</button>
 
 
             </div>
