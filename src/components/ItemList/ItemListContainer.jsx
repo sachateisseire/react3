@@ -19,15 +19,21 @@ function ItemListContainer(props) {
     <>
       <div className="container-fluid text-center" id='container-fluid-listContainer'>
         <div className="row">
-          <div className="col">
+          <div className='col'>
+
           
           {coursesList.map((curso) =>{
-            return <Cards img={curso.img} title={curso.title} detail={curso.detail} />
+            return <Cards 
+                      key={curso.id}
+                      img={curso.img}
+                      title={curso.title}
+                      detail={curso.detail} />
           })}
 
           </div>
           </div>
-        </div>
+          </div>
+
     </>
   )
 }

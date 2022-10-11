@@ -28,6 +28,12 @@ const data = [
 
 export function getCursos() {
     return new Promise((resolve) => {
-        setTimeout(() => resolve(data), 500);
+        setTimeout(() => resolve(data), 1000);
+    });
+}
+
+export function getUnCurso() {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(data[0]), 1000);
     });
 }
