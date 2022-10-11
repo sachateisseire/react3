@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import Cards from './Cards'
 import './itemListContainer.css'
-import { getCursos } from "../../mockAPI/mockAPI"
+import { getCursos, getCursosByCategory } from "../../mockAPI/mockAPI"
+import { useParams } from "react-router-dom"
 
 
 function ItemListContainer(props) {
 
   const [coursesList, setCoursesList] = useState([]);
+  const params = useParams();
+  const categoryID = params.categoryID;
 
   useEffect(() => {
-    getCursos().then((data) => {
+    if (categoryID === undefined){
+      getCursos().then((data) => {
       setCoursesList(data);
     });
-  }, []);
+  } else {
+    getCursosByCategory(categoryID).then((data) => {
+      setCoursesList(data);
+    })
+  }
+  }, [categoryID]);
 
   return (
 
@@ -28,7 +37,8 @@ function ItemListContainer(props) {
                       id={curso.id}
                       img={curso.img}
                       title={curso.title}
-                      detail={curso.detail} />
+                      detail={curso.detail}
+                      category={curso.category}/>
           })}
 
           </div>

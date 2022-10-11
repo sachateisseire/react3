@@ -17,10 +17,10 @@ function NavBar() {
                     <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Carreras</a>
+                    <Link className="nav-link" to="/category/cursos">Cursos</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="#">Cursos</Link>
+                    <Link className="nav-link" to="/category/carreras">Carreras</Link>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link" href="#">FAQ's</a>
