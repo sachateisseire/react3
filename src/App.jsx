@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer/>}/>
         <Route path="/curso/:id" element={<ItemDetailContainer/>}/>
+        <Route path="/curso/undefined" element={<ItemListContainer/>}/>
       </Routes>
     </BrowserRouter>
   );

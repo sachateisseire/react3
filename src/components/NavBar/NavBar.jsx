@@ -20,7 +20,7 @@ function NavBar() {
                     <a className="nav-link" href="#">Carreras</a>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/curso">Cursos</Link>
+                    <Link className="nav-link" to="#">Cursos</Link>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link" href="#">FAQ's</a>
